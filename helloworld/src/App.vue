@@ -1,5 +1,7 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png">
+  <h4 class="promoted" >{{name}}</h4>
+
   
 </template>
 
@@ -8,6 +10,13 @@
 
 export default {
   name: 'App',
+  data(){
+     return{
+       name: "isaac",
+       movie: "spiderman",
+       ispromoted:true
+     }
+  }
 
 }
 </script>
@@ -20,5 +29,11 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+.soldout{
+ color:"red"
+}
+.promoted{
+  color:"green"
 }
 </style>
